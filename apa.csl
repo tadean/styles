@@ -1360,13 +1360,13 @@
             </else>
           </choose>
         </if>
-        <else>
+        <else-if variable="number-of-volumes" match="any">
           <group>
             <label variable="number-of-volumes" form="short" text-case="capitalize-first" suffix=" "/>
             <text term="page-range-delimiter" prefix="1"/>
             <number variable="number-of-volumes" form="numeric"/>
           </group>
-        </else>
+        </else-if>
       </choose>
       <group delimiter=" ">
         <label variable="issue" text-case="capitalize-first"/>
